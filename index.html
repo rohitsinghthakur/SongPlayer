@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Song Player</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+
+      
+
+        <div class="mic"><i class="ri-subtract-line"></i><i class="ri-circle-fill" ></i></div>
+        <div class="header">
+          <i class="ri-menu-2-line"></i>
+          <p>Now Playing</p>
+          <i class="ri-search-line"></i>
+        </div>
+        <div class="background-container">
+          <div class="songs-queue">
+            <!-- <div class="songs">
+              <div class="song-logo">
+                <img src="song2.jpg" alt="">
+              </div>
+              <p>here hawale</p>
+            </div>
+            <div class="songs">
+              <div class="song-logo">
+                <img src="song2.jpg" alt="">
+              </div>
+              <p>here hawale</p>
+            </div>
+            <div class="songs">
+              <div class="song-logo">
+                <img src="song2.jpg" alt="">
+              </div>
+              <p>here hawale</p>
+            </div>
+            <div class="songs">
+              <div class="song-logo">
+                <img src="song2.jpg" alt="">
+              </div>
+              <p>here hawale</p>
+            </div> -->
+           
+          </div>
+          <div class="song-info">
+            <div class="song-image">
+              <img src="song2.jpg" alt="" style="height: 100%; border-radius: 50%;"></div>
+            <p id="songName"> Music Name 
+              
+            </p>
+          </div>
+          <div class="controls">
+            <input type="range" id="rangeBar" value="0" max="25" />
+            <div class="play-pause-items">
+              <i class="ri-play-reverse-fill" id="prevBtn"></i>
+
+              <i class="ri-play-circle-line" id="playBtn"></i>
+              <!-- <i class="ri-pause-circle-line" id="playIcon" onclick="playPauseSong()"></i> -->
+
+              <i class="ri-play-fill" id="nextBtn"></i>
+            </div>
+          </div>
+        </div>
+        <div class="home-btn"> </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

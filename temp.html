@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Background Image of ::after with JavaScript</title>
+<style>
+    .container {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        background-color: #f0f0f0;
+    }
+    .container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        transition: background-image 0.5s ease;
+    }
+    
+    .container.change::after {
+        background-image: url("song3.jpg");
+    }
+    .container.change2::after {
+        background-image: url("song5.jpg");
+    }
+</style>
+</head>
+<body>
+
+<div class="container"></div>
+
+<script>
+    // Get the div element
+    var div = document.querySelector('.container');
+
+    // Toggle the class to change the background image
+    div.classList.toggle('change2');
+</script>
+
+</body>
+</html>
